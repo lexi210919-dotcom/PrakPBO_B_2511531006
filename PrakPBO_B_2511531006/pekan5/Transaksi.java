@@ -1,4 +1,4 @@
-package pekan2;
+package pekan5;
 
 public class Transaksi {
 
@@ -6,17 +6,25 @@ public class Transaksi {
     private String jenis;
     private double nominal;
 
-    public Transaksi(String idTransaksi, String jenis, double nominal) {
+    public Transaksi(String idTransaksi,String jenis,double nominal) {
         this.idTransaksi = idTransaksi;
         this.jenis = jenis;
         this.nominal = nominal;
     }
 
-    public String getIdTransaksi() {return idTransaksi; }
-    public String getJenis() {return jenis; }
-    public double getNominal() {return nominal;}
-    public void cetakDetail() {
+    public String getIdTransaksi() {
+        return idTransaksi;
+    }
 
-        System.out.println("ID Transaksi : " + idTransaksi+ " | Jenis : " + jenis + " | Nominal : Rp" + nominal);
+    public String getJenis() {
+        return jenis;
+    }
+
+    public double getNominal() {
+        return nominal;
+    }
+
+    public void cetakDetail() {
+        System.out.println("ID Transaksi : " + idTransaksi+ " | Jenis : " + jenis+ " | Nominal : Rp" + nominal);
     }
 }
